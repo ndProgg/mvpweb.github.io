@@ -1,0 +1,302 @@
+/* Общие стили для всего сайта */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F8F6F4;
+}
+
+/* Стили для верхней полосы */
+.top-bar {
+    background-color: #F2F0ED;
+    color: #f2f0ed;
+    padding: 10px;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* Стили для нижней полосы */
+.bottom-bar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* Стили для шапки сайта */
+header {
+    background-color: #4F4557;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.logo {
+    margin-left: 20px;
+}
+
+.logo img {
+    max-width: 100px;
+    height: auto;
+}
+
+/* Стили для кнопок в шапке сайта */
+nav ul {
+    margin-top: 20px;
+}
+
+nav {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+    font-size: 32px;
+}
+
+nav a:hover {
+    color: #007acc;
+}
+
+/* Стили для основного контента */
+main {
+    padding: 20px;
+}
+
+.news {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Стили для окошек с новостями (включая контакты) */
+.news-item {
+    flex-basis: calc(30% - 20px);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.news-item:hover {
+    transform: scale(1.05);
+}
+
+.news-item h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.news-item p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+/* Стили для изображения в окошке */
+.news-item img {
+    max-width: 99999px;
+    height: auto;
+    display: block;
+    margin: 0;
+}
+
+.header-buttons a {
+    display: inline-block;
+    position: relative;
+}
+
+.button-text {
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    white-space: nowrap;
+    transition: opacity 0.3s;
+}
+
+.header-buttons a:hover .button-text {
+    opacity: 1;
+}
+
+/* Стили для кнопок в контактах */
+.contact-buttons button {
+    padding: 10px 20px;
+    background-color: #4F4557;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s;
+}
+
+.contact-buttons button:hover {
+    background-color: #007acc;
+}
+
+/* Стили для контактной информации */
+.contact-info {
+    background-color: #F8F6F4;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Стили для окошек с контактами на странице контактов */
+.contact-info .contact-item {
+    flex-basis: calc(30% - 20px);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.contact-info .contact-item:hover {
+    transform: scale(1.05);
+}
+
+
+/* Стили для текста на странице контактов */
+.contact-info h2,
+.contact-info h3,
+.contact-info p,
+.contact-buttons button {
+    font-family: "Ваш_новый_шрифт", Arial, sans-serif;
+    /* Добавьте ваш выбранный шрифт вместо "Ваш_новый_шрифт" */
+}
+
+/* Пример изменения размера шрифта */
+.contact-info h2 {
+    font-size: 1.4rem;
+}
+
+.contact-info h3 {
+    font-size: 1.25rem;
+}
+
+.contact-info p {
+    font-size: 1.1rem;
+}
+
+.contact-buttons button {
+    font-size: 1.1rem;
+}
+
+/* Создайте контейнер */
+.contact-container {
+    max-width: 800px; /* Установите нужную вам ширину */
+    margin: 0 auto; /* Отцентрируйте по горизонтали */
+    display: flex;
+    justify-content: space-between; /* Создайте пространство для рекламы по бокам */
+}
+
+
+<style>
+    @keyframes blinking {
+        0% {
+            background-color: yellow;
+            color: black;
+        }
+        50% {
+            background-color: blue;
+            color: white;
+        }
+        100% {
+            background-color: yellow;
+            color: black;
+        }
+    }
+
+    .blinking-button {
+        animation: blinking 1s infinite;
+    }
+</style>
+
+#order {
+    background-color: #0074b8; /* Глубокий синий цвет */
+    color: #fff; /* Белый текст */
+    padding: 10px 20px; /* Отступы внутри кнопки */
+    border: none; /* Убираем границу */
+    border-radius: 5px; /* Закругляем углы */
+    cursor: pointer; /* Задаем курсор в виде указателя при наведении */
+}
+
+/* Стиль кнопки "Заказать" при наведении */
+#order:hover {
+    background-color: #00518f; /* Глубокий синий цвет при наведении */
+}
+
+
+#order {
+    background-color: #0074b8; /* Цвет фона */
+    color: #fff; /* Цвет текста */
+    padding: 10px 20px; /* Отступы внутри кнопки */
+    border: none; /* Убираем границу */
+    border-radius: 5px; /* Закругляем углы кнопки */
+    cursor: pointer; /* Изменяем курсор при наведении */
+}
+
+/* Стиль кнопки "Заказать" при наведении */
+#order:hover {
+    background-color: #00518f; /* Цвет фона при наведении */
+}
+
+/* Создание пробела между польским языком и Facebook */
+.header-buttons a:nth-child(3) {
+    margin-right: 25px;
+}
